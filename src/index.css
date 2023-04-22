@@ -1,0 +1,100 @@
+/* google font 'Raleway' */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1471px;
+}
+:root{
+  --blue-bg: #7000FF;
+  --blue: #260057;
+  --white: #fff;
+  --black: #000;
+  --gray: #D4B2FF;
+}
+/* navbar */
+nav{
+  height: 100px;
+  width: 100%;
+  background: var(--blue-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar-free{
+  height: 100px;
+  width: 100%;
+}
+header{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-main{
+  color: var(--white);
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-lang{
+  width: 187px;
+  height: 54px;
+  border-radius: 27px;
+  color: var(--blue);
+  background: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+.nav-current-lang{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-current-lang b{
+  font-weight: 600;
+}
+.nav-current-lang span{
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+}
+.nav-links{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 40px;
+}
+.nav-links{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav-order-btn{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 51px;
+  border-radius: 10px;
+  background: var(--blue);
+  cursor: pointer;
+}
