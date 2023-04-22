@@ -35,6 +35,10 @@ const Navbar = () => {
                                 <AiOutlineCaretDown/>
                             </span>
                         </div>
+                        <div className="nav-more-langs">
+                            <div className="has-lang" onClick={()=>setLang(0)}>Uzbek</div>
+                            <div className="has-lang" onClick={()=>setLang(1)}>Русский</div>
+                        </div>
                     </div>
                     <div className="nav-links">
                         <div className="nav-link">О Дяде Джо</div>
