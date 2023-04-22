@@ -9,6 +9,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   transition: all .3s;
+  background: #e9e9e94b;
 }
 .container{
   width: 100%;
@@ -153,17 +154,18 @@ header{
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .hero-slider{
   width: 50%;
-  height: 700px;
+  height: 100%;
   position: relative;
   border-radius: 50px;
   overflow: hidden;
 }
 .hero-slide{
-  width: 700px;
-  height: 700px;
+  width: 100%;
+  height: 100%;
 }
 .hero-slide img{
   width: 100%;
@@ -193,6 +195,39 @@ header{
 }
 .hero-infos{
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-infos h1{
+  font-size: 60px;
+  font-weight: 900;
+  color: #260057;
+}
+.hero-infos p{
+  font-size: 19px;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.hero-btn{
+  width: 60%;
+  min-width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--blue-bg);
+  color: var(--white);
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+.hero-btn:hover{
+  opacity: .8;
 }
 
 @media screen and (max-width: 1440px) {
@@ -218,12 +253,23 @@ header{
     width: 140px;
     height: 40px;
   }
+  .hero-infos h1{
+    font-size: 40px;
+  }
+  .hero-infos p{
+    font-size: 16px;
+  }
+  .hero-btn{
+    min-width: 300px;
+    font-size: 16px;
+    height: 75px;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav-main{
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: var(--white);
     left: 0;
     top: 0;
@@ -232,7 +278,7 @@ header{
     justify-content: center;
     align-items: center;
     padding-top: 110px;
-    padding-bottom: 196px;
+    padding-bottom: 296px;
     transition: .3s;
   }
   .nav-main.active{
@@ -254,12 +300,14 @@ header{
   }
   .nav-lang{
     width: calc(100% - 40px);
+    height: 60px;
     margin-right: 0;
     position: relative;
+    border-radius: 10px;
   }
 
   .nav-current-lang{
-    height: 45px;
+    height: 60px;
   }
   .bar{
     display: flex;
@@ -283,16 +331,35 @@ header{
   .nav-order-btn{
     width: calc(100% - 40px);
     margin-left: 0;
-    height: 45px !important;
+    height: 60px !important;
     display: flex;
     background: var(--blue-bg);
     color: var(--white);
     font-size: 18px;
     font-weight: 700;
-    padding: 7px;
+    padding: 20px;
   }
   .nav-link:hover{
     color: var(--blue-bg);
+  }
+  .hero{
+    margin-top: 10px;
+    flex-direction: column-reverse;
+  }
+  .hero-infos,
+  .hero-slider{
+    width: 100%;
+  }
+  .hero-infos h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .hero-infos p{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .slide-arrow{
+    display: none;
   }
 }
 
