@@ -229,6 +229,14 @@ header{
 .hero-btn:hover{
   opacity: .8;
 }
+.done{
+  margin-top: 200px;
+}
+.done-cards{
+  display: flex;
+  width: 100%;
+  min-width: 1000px;
+}
 
 @media screen and (max-width: 1440px) {
   .container{
