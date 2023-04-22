@@ -1,8 +1,10 @@
 {
-    "uz": {
-        "name": "olma"
-    },
-    "ru":{
-        "name": "yabloka"
-    }
+    "language": [
+         {
+            "name": "Uzbek"
+        },
+        {
+            "name": "Русский"
+        }
+    ]
 }

@@ -1,14 +1,19 @@
 import { Route, Routes } from "react-router-dom";
+import data from './lang/database.json';
 
 // import pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Context from "./context/Context";
+import { useState } from "react";
 
 
 function App() {
+  const [lang, setLang] = useState(0);
   const contextVlaue = {
-    lang: "uz"
+    lang,
+    setLang,
+    data
   };
   return (
     <Context.Provider value={contextVlaue}>
