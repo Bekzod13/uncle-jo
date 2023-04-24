@@ -16,7 +16,6 @@ const Navbar = () => {
     const [bar, setBar] = useState(true);
     const {lang, setLang, data} = useContext(Context);
 
-
   return (
     <>
         <nav>
