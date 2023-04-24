@@ -25,6 +25,7 @@ const Tarif = () => {
                         </div>
                         <div className="tarif_product_main_img">
                             <img src={img} alt="" />
+                            <button className='img_btn'>Бесплатно</button>
                         </div>
                     </div>
                 </div>
@@ -45,6 +46,7 @@ const Tarif = () => {
                         </div>
                         <div className="tarif_product_main_img">
                             <img src={img1} alt="" />
+                            <button className='img_btn'>1,5млн сум +10% от прибыли</button>
                         </div>
                     </div>
                 </div>
@@ -63,6 +65,7 @@ const Tarif = () => {
                         </div>
                         <div className="tarif_product_main_img">
                             <img src={img2} alt="" />
+                            <button className='img_btn'>Бесĸонечно - ꝏ</button>
                         </div>
                     </div>
                 </div>
