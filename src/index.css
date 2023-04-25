@@ -553,6 +553,7 @@ header {
   padding: 40px;
   border-radius: 25px;
   display: flex;
+  gap: 30px;
   align-items: center;
   transition: .5s;
   cursor: pointer;
@@ -573,7 +574,6 @@ header {
   color: var(--white);
   font-weight: 900;
   font-size: 60px;
-  margin-right: 40px;
   transition: .3s;
 }
 
@@ -616,15 +616,43 @@ header {
   /* padding: 20px; */
 }
 
-.questions_main_div_text_border:nth-child(1) {
+.questions_boxes {
+  border-top: 1px solid var(--blue);
+  padding: 20px;
+}
+
+.questions_boxes:nth-child(1) {
   border: none;
 }
 
 .questions_main_div_text_border {
-  border-top: 1px solid var(--blue);
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.questions_box {
+  display: none;
+  transition: 1s;
+}
+
+.questions_box_flex {
+  display: flex;
+  transition: .3s;
+}
+
+.questions_box_body {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.questions_plus {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.questions_plus_big {
+  transform: rotate(135deg) scale(1.5);
+  color: red;
 }
 
 /* Contact */
@@ -795,13 +823,15 @@ header {
   color: var(--white);
   text-decoration: none;
 }
-.footer_bottom{
+
+.footer_bottom {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer_bottom p{
+
+.footer_bottom p {
   width: 60%;
   text-align: center;
   margin-top: 30px;
@@ -1126,19 +1156,66 @@ header {
     width: 100%;
   }
 
-  .footer_main{
+  .footer_main {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .tarif_product_title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 53px;
   }
 }
 
 @media screen and (max-width: 514px) {
   .trade_divs_product {
-    min-width: 400px;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .footer_main_links{
+  .footer_main_links {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .done-card {
+    min-width: 320px;
+  }
+
+  .done-bg .container h1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .contact_main_div_left_form_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact_main_div_left_form_div input {
+    width: 100%;
+  }
+
+  .contact_main_div_left_form_div {
+    padding: 0;
+  }
+
+  .contact_main_div_left_bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
