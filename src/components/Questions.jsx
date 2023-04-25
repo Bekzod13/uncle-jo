@@ -28,7 +28,7 @@ const Questions = () => {
                         <div className="questions_main_div_text">
                             <div className='questions_boxes'>
                                 <div className='questions_main_div_text_border'>
-                                    <p>Работаете с маленьким объемом товара?</p>
+                                    <p className={none ? 'questions_main_div_text_border_title title_big' : 'questions_main_div_text_border_title'}>Работаете с маленьким объемом товара?</p>
                                     <p className={none ? 'questions_plus questions_plus_big' : 'questions_plus'} onClick={handleNone}><AiOutlinePlus /></p>
                                 </div>
                                 <div className={none ? "questions_box questions_box_flex" : "questions_box"}>
@@ -37,7 +37,7 @@ const Questions = () => {
                             </div>
                             <div className='questions_boxes'>
                                 <div className='questions_main_div_text_border'>
-                                    <p>Какие способы доставки товара имеются у Дяди Джо?</p>
+                                    <p className={noneOne ? 'questions_main_div_text_border_title title_big' : 'questions_main_div_text_border_title'}>Какие способы доставки товара имеются у Дяди Джо?</p>
                                     <p className={noneOne ? 'questions_plus questions_plus_big' : 'questions_plus'} onClick={handleNoneOne}><AiOutlinePlus /></p>
                                 </div>
                                 <div className={noneOne ? "questions_box questions_box_flex" : "questions_box"}>
@@ -46,7 +46,7 @@ const Questions = () => {
                             </div>
                             <div className='questions_boxes'>
                                 <div className='questions_main_div_text_border'>
-                                    <p>Как быстро мой товар будет выставлен на продажу? </p>
+                                    <p className={noneTwo ? 'questions_main_div_text_border_title title_big' : 'questions_main_div_text_border_title'}>Как быстро мой товар будет выставлен на продажу? </p>
                                     <p className={noneTwo ? 'questions_plus questions_plus_big' : 'questions_plus'} onClick={handleNoneTwo}><AiOutlinePlus /></p>
                                 </div>
                                 <div className={noneTwo ? "questions_box questions_box_flex" : "questions_box"}>
@@ -55,7 +55,7 @@ const Questions = () => {
                             </div>
                             <div className='questions_boxes'>
                                 <div className='questions_main_div_text_border'>
-                                    <p>Как подобрать идеальную упаковку для вашего товара? </p>
+                                    <p className={noneThree ? 'questions_main_div_text_border_title title_big' : 'questions_main_div_text_border_title'}>Как подобрать идеальную упаковку для вашего товара? </p>
                                     <p className={noneThree ? 'questions_plus questions_plus_big' : 'questions_plus'} onClick={handleNoneThree}><AiOutlinePlus /></p>
                                 </div>
                                 <div className={noneThree ? "questions_box questions_box_flex" : "questions_box"}>
@@ -64,29 +64,13 @@ const Questions = () => {
                             </div>
                             <div className='questions_boxes'>
                                 <div className='questions_main_div_text_border'>
-                                    <p>Какие методы оплаты доступны у Дяди Джо?</p>
+                                    <p className={noneFour ? 'questions_main_div_text_border_title title_big' : 'questions_main_div_text_border_title'}>Какие методы оплаты доступны у Дяди Джо?</p>
                                     <p className={noneFour ? 'questions_plus questions_plus_big' : 'questions_plus'} onClick={handleNoneFour}><AiOutlinePlus /></p>
                                 </div>
                                 <div className={noneFour ? "questions_box questions_box_flex" : "questions_box"}>
                                     <p className='questions_box_body'>Мы учитываем все индивидуальные характеристики и размеры, чтобы обеспечить максимальную защиту. Например, хрупкие изделия мы обернем в воздушно-пузырьковую пленку, а объемные товары - в стрейч-пленку. Мы позаботимся о том, чтобы ваш товар был надежно упакован и готов к отправке.</p>
                                 </div>
                             </div>
-                            {/* <div className='questions_main_div_text_border'>
-                                <p>Работаете с маленьким объемом товара?</p>
-                                <p><AiOutlinePlus /></p>
-                            </div>
-                            <div className='questions_main_div_text_border'>
-                                <p>Работаете с маленьким объемом товара?</p>
-                                <p><AiOutlinePlus /></p>
-                            </div>
-                            <div className='questions_main_div_text_border'>
-                                <p>Работаете с маленьким объемом товара?</p>
-                                <p><AiOutlinePlus /></p>
-                            </div>
-                            <div className='questions_main_div_text_border'>
-                                <p>Работаете с маленьким объемом товара?</p>
-                                <p><AiOutlinePlus /></p>
-                            </div> */}
                         </div>
                     </div>
                 </div>
