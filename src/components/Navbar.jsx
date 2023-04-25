@@ -40,7 +40,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="nav-links">
-                        <div className="nav-link">О Дяде Джо</div>
+                        <div className="nav-link">{data.about[lang].name}</div>
                         <div className="nav-link">Тарифы и услуги</div>
                         <div className="nav-link">FAQ</div>
                         <div className="nav-link">Контакты</div>
