@@ -643,16 +643,28 @@ header {
 .questions_box_body {
   font-size: 14px;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .questions_plus {
   cursor: pointer;
   transition: .3s;
+  margin: 10px;
 }
 
 .questions_plus_big {
-  transform: rotate(135deg) scale(1.5);
+  transform: rotate(45deg) scale(1.5);
   color: red;
+}
+
+.questions_main_div_text_border_title {
+  color: var(--black);
+  transition: .3s;
+}
+
+.title_big {
+  font-size: 20px;
+  transition: .3s;
 }
 
 /* Contact */
