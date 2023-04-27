@@ -8,7 +8,7 @@ import Packaging from '../components/Packaging';
 import Questions from '../components/Questions';
 import Tarif from '../components/Tarif';
 import Trade from '../components/Trade';
-import Done from './Done';
+import Done from '../components/Done';
 
 const Home = () => {
   return (

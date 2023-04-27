@@ -5,11 +5,11 @@ import img from '../assets/questions_img/img.png'
 import { AiOutlinePlus } from 'react-icons/ai'
 
 const Questions = () => {
-    const [none, setNone] = useState();
-    const [noneOne, setNoneOne] = useState();
-    const [noneTwo, setNoneTwo] = useState();
-    const [noneThree, setNoneThree] = useState();
-    const [noneFour, setNoneFour] = useState();
+    const [none, setNone] = useState(false);
+    const [noneOne, setNoneOne] = useState(false);
+    const [noneTwo, setNoneTwo] = useState(false);
+    const [noneThree, setNoneThree] = useState(false);
+    const [noneFour, setNoneFour] = useState(false);
     
     const handleNone = () => setNone(!none);
     const handleNoneOne = () => setNoneOne(!noneOne);
