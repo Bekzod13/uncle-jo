@@ -5,7 +5,7 @@ import { BsFacebook, BsInstagram, BsTelegram } from 'react-icons/bs'
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className="container">
                 <div className="contact_main">
                     <p className="title">Контакты</p>

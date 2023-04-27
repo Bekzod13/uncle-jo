@@ -40,10 +40,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="nav-links">
-                        <div className="nav-link">{data.about[lang].name}</div>
-                        <div className="nav-link">Тарифы и услуги</div>
-                        <div className="nav-link">FAQ</div>
-                        <div className="nav-link">Контакты</div>
+                        <a href='#hero' className="nav-link">{data.about[lang].name}</a>
+                        <a href='#tarif' className="nav-link">Тарифы и услуги</a>
+                        <a href='#faq' className="nav-link">FAQ</a>
+                        <a href='#contact' className="nav-link">Контакты</a>
                     </div>
                     <div className="nav-order-btn">Оставь заявку Дяде Джо</div>
                 </div>

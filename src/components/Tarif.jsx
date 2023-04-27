@@ -5,7 +5,7 @@ import img2 from '../assets/tarif_img/img2.png'
 
 const Tarif = () => {
     return (
-        <div className='tarif'>
+        <div className='tarif' id='tarif'>
             <div className="container">
                 <div className="tarif_main">
                     <p className="title">Тарифы и Услуги</p>

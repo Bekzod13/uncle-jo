@@ -12,9 +12,9 @@ const Map = () => {
                         </div>
                         <div className="map_main_div_text">
                             <p>Адрес:</p>
-                            <p className='map_main_div_text_body'>г. Ташкент, Шайхантаурский район, улица Хадра, 17</p>
+                            <p className='map_main_div_text_body'>г. Ташкент, Шайхантахурский район, улица Хадра, 17</p>
                             <p>Ориентир:</p>
-                            <p className='map_main_div_text_body'>Напротив Торговых Рядов "Малика"</p>
+                            <p className='map_main_div_text_body'>напротив бывших торговых рядов “Навои”, сзади “Ганги”</p>
                         </div>
                     </div>
                 </div>

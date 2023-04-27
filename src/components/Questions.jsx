@@ -17,7 +17,7 @@ const Questions = () => {
     const handleNoneThree = () => setNoneThree(!noneThree);
     const handleNoneFour = () => setNoneFour(!noneFour);
     return (
-        <div className='questions'>
+        <div className='questions' id='faq'>
             <div className="container">
                 <div className="questions_main">
                     <p className="title">Часто задаваемые вопросы</p>

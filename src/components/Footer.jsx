@@ -11,10 +11,10 @@ const Footer = () => {
                         <img src={img} alt="" />
                     </div>
                     <div className="footer_main_links">
-                        <Link to='/'>О Дяде Джо</Link>
-                        <Link to='/'>Тарифы и услуги</Link>
-                        <Link to='/'>FAQ</Link>
-                        <Link to='/'>Контакты</Link>
+                        <a href='#hero' to='/'>О Дяде Джо</a>
+                        <a href='#tarif' to='/'>Тарифы и услуги</a>
+                        <a href='#faq' to='/'>FAQ</a>
+                        <a href='#contact' to='/'>Контакты</a>
                     </div>
                 </div>
                 <div className="footer_bottom">
