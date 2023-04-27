@@ -697,10 +697,6 @@ header {
   align-items: center;
 }
 
-.title_big {
-  font-size: 20px;
-  transition: .3s;
-}
 
 /* Contact */
 .contact_main_div {
@@ -741,10 +737,11 @@ header {
   justify-content: space-between;
   margin-top: 10px;
   padding: 0 30px;
+  gap: 16px;
 }
 
 .contact_main_div_left_form_div input {
-  width: 40%;
+  width: 50%;
   height: 60px;
   border-radius: 30px;
   border: none;
@@ -811,11 +808,12 @@ header {
 
 .map_main_div_img {
   width: 65%;
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.map_main_div_img img {
-  width: 100%;
-}
+
 
 .map_main_div_text {
   width: 30%;

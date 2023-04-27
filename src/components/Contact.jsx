@@ -33,9 +33,9 @@ const Contact = () => {
                                 <div className="contact_main_div_left_bottom_right">
                                     <p>Мы в соцсетях::</p>
                                     <div className='contact_main_div_left_bottom_right_div'>
-                                        <a href='https://www.facebook.com/'><BsFacebook /></a>
-                                        <a href='https://www.instagram.com/'><BsInstagram /></a>
-                                        <a href='https://t.me/'><BsTelegram /></a>
+                                        <a href='https://www.facebook.com/profile.php?id=100091669283557'><BsFacebook /></a>
+                                        <a href='https://www.instagram.com/uncle_jo_fulfillment/'><BsInstagram /></a>
+                                        <a href='https://t.me/uncle_jo_fulfillment'><BsTelegram /></a>
                                     </div>
                                 </div>
                             </div>

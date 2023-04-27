@@ -1,4 +1,4 @@
-import img from '../assets/img.png'
+import Location from './Location';
 
 const Map = () => {
     return (
@@ -8,7 +8,7 @@ const Map = () => {
                     <p className="title">Наш адрес</p>
                     <div className='map_main_div'>
                         <div className="map_main_div_img">
-                            <img src={img} alt="" />
+                            <Location/>
                         </div>
                         <div className="map_main_div_text">
                             <p>Адрес:</p>
