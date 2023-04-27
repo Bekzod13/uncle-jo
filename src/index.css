@@ -484,7 +484,9 @@ header {
   min-width: 460px;
   position: relative;
   display: flex;
-  /* flex: 1; */
+}
+.packaging_main_product img{
+  border-radius: 70px;
 }
 
 .packaging_main_product img {
@@ -560,7 +562,7 @@ header {
 }
 
 .trade_divs_product:hover .trade_divs_product_num {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .trade_divs_product_num {
@@ -575,6 +577,7 @@ header {
   font-weight: 900;
   font-size: 60px;
   transition: .3s;
+  padding-bottom: 10px;
 }
 
 .trade_divs_product_right_title {
@@ -740,10 +743,10 @@ header {
 .contact_main_div_left_form_div input {
   width: 40%;
   height: 60px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   outline: none;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 17px;
 }
 
