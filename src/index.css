@@ -1005,17 +1005,6 @@ header {
   .done {
     margin-top: 50px;
   }
-  .done-cards-box::-webkit-scrollbar {
-    border-radius: 5px;
-    height: 5px;
-    background: var(--gray);
-  }
-
-  .done-cards-box::-webkit-scrollbar-thumb {
-    height: 5px;
-    border-radius: 5px;
-    background: var(--blue);
-  }
 
   .nav-main {
     position: fixed;
@@ -1281,6 +1270,7 @@ header {
     width: 100%;
     margin-top: 5px;
   }
+  
 }
 
 @media screen and (max-width: 514px) {
@@ -1303,7 +1293,6 @@ header {
   .done-card {
     min-width: 320px;
   }
-
   .done_bg_title {
     width: 100%;
     display: flex;
@@ -1344,6 +1333,7 @@ header {
   .packaging_main_product {
     width: 100%;
   }
+ 
 
 }
 
@@ -1352,7 +1342,9 @@ header {
   .container{
     padding: 0 20px;
   }
-
+  .container.done{
+    padding: 0 !important;
+  }
   .img_btn{
     padding: 10px;
     font-size: 20px;
@@ -1376,6 +1368,7 @@ header {
   .tarif_product_main_text ul li{
     font-size: 13px;
   }
+  
 }
 @media screen and (max-width: 360px) {
 
@@ -1400,4 +1393,5 @@ header {
   .done-card{
     min-width: 100px;
   }
+  
 }
