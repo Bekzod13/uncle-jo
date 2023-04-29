@@ -1,5 +1,7 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
+// import location image
+import location from '../assets/location.svg';
 const Location = () => {
 
     const mapState = {
@@ -20,9 +22,8 @@ const Location = () => {
                     geometry={[41.324940, 69.249526]}  
                     options={{
                         iconLayout: "default#imageWithContent",
-                        iconImageHref:
-                        "https://pbe-react-yandex-maps.vercel.app/img/logo.svg",
-                        iconImageSize: [40, 40]
+                        iconImageHref: location,
+                        iconImageSize: [45, 45]
                     }}
                  />
             </Map>

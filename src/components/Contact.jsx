@@ -12,7 +12,7 @@ const Contact = () => {
                     <div className="contact_main_div">
                         <div className="contact_main_div_left">
                             <div className="contact_main_div_left_form">
-                                <form action="">
+                                <form action="" className='contact_main_div_left_form_box'>
                                     <div className='contact_main_div_left_form_div'>
                                         <input type="text" placeholder='ФИО' />
                                         <input type="text" placeholder='Название компании' />

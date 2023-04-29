@@ -21,7 +21,7 @@ const Packaging = () => {
                             <button className='img_btn img_btn_scale'>От 3000 сум/товар</button>
                         </div>
                         <div className="packaging_main_product">
-                            <p className='packaging_main_product_title packaging_main_product_title2'>Большой ассортимент паĸетов</p>
+                            <p className='packaging_main_product_title packaging_main_product_title2'>Большой <br /> ассортимент паĸетов</p>
                             <img src={img2} alt="" />
                             <button className='img_btn img_btn_scale'>От 700 сум/товар</button>
                         </div>

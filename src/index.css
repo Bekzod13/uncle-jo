@@ -188,7 +188,6 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-
 }
 
 .hero-slider {
@@ -256,8 +255,8 @@ header {
   font-size: 19px;
   font-weight: 500;
   width: 100%;
-  letter-spacing: 2px;
   line-height: 25px;
+  color: var(--black);
 }
 
 .hero-btn {
@@ -489,7 +488,7 @@ header {
 .packaging_main_product {
   width: 30%;
   max-width: 460px;
-  min-width: 460px;
+  /* min-width: 460px; */
   position: relative;
   display: flex;
 }
@@ -512,13 +511,15 @@ header {
 .packaging_main_product_title {
   position: absolute;
   top: 30px;
-  left: 20%;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: var(--white);
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .packaging_main_product_title2 {
@@ -711,6 +712,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .contact_main_div_left {
@@ -743,9 +745,13 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  padding: 0 30px;
   gap: 16px;
+}
+.contact_main_div_left_form_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .contact_main_div_left_form_div input {
@@ -757,12 +763,20 @@ header {
   padding: 10px 20px;
   font-size: 17px;
 }
+.contact_main_div_left_form_div input::placeholder {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 
 .contact_main_div_left_form_btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 336px;
   margin: auto;
-  margin-top: 30px;
-  padding: 20px 100px;
   background: var(--blue-bg);
   border: none;
   outline: none;
@@ -889,6 +903,8 @@ header {
   text-align: center;
   margin-top: 30px;
   color: var(--white);
+  font-size: 12px;
+  opacity: .7;
 }
 
 @media screen and (max-width: 1440px) {
@@ -921,14 +937,15 @@ header {
   }
 
   .hero-infos h1 {
-    font-size: 40px;
+    font-weight: 900;
   }
 
   .hero-infos p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .hero-btn {
+    width: 100%;
     min-width: 300px;
     font-size: 16px;
     height: 75px;
@@ -955,12 +972,18 @@ header {
     font-size: 50px;
   }
 
+  .tarif_product_main_text ul {
+    padding-left: 22px;
+    margin-bottom: 40px;
+  }
   .tarif_product_main_text ul li {
     font-size: 20px;
+    line-height: 18px;
   }
 
   .packaging_main_products {
     justify-content: center;
+    padding: 0 10px;
   }
 
   .trade_divs_products {
@@ -976,7 +999,12 @@ header {
   .done-cards-box {
     overflow-x: scroll;
   }
-
+  .nav-link{
+    color: var(--blue);
+  }
+  .done {
+    margin-top: 50px;
+  }
   .done-cards-box::-webkit-scrollbar {
     border-radius: 5px;
     height: 5px;
@@ -1076,6 +1104,7 @@ header {
   .hero {
     margin-top: 10px;
     flex-direction: column-reverse;
+    /* padding: 10px; */
   }
 
   .hero-infos,
@@ -1084,12 +1113,13 @@ header {
   }
 
   .hero-infos h1 {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 900;
     margin-bottom: 30px;
   }
 
   .hero-infos p {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 30px;
   }
 
@@ -1097,27 +1127,38 @@ header {
     display: none;
   }
 
+  .hero-slider {
+    transform: scale(1);
+  }
+
   .done_bg_title {
     font-size: 50px;
     width: 100%;
     margin-bottom: 20px;
   }
-
+  .done{
+    padding: 0;
+  }
   .done-bg_div {
     font-size: 15px;
     width: 100%;
   }
-
+  .done-cards{
+    padding: 0 10px;
+  }
+  .done-card{
+    padding: 30px;
+  }
   .done-bg {
     padding: 300px 0 100px 0;
   }
 
   .done-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .done-top img {
-    width: 70px;
+    width: 50px;
   }
 
   .done-card {
@@ -1125,19 +1166,24 @@ header {
   }
 
   .done-top {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .done-body {
     font-size: 16px;
+    line-height: 16px;
   }
 
   .title {
     font-size: 60px;
+    text-align: left;
   }
-
+  .tarif_product{
+    padding-top: 10px;
+    border-radius: 20px;
+  }
   .tarif_product_main {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .tarif_product_main_text {
@@ -1151,7 +1197,11 @@ header {
 
   .packaging_main_product {
     max-width: none;
-    min-width: 360px;
+    width: 100%;
+  }
+
+  .packaging_main_product img {
+    border-radius: 40px;
   }
 
   .questions_main_div {
@@ -1185,6 +1235,7 @@ header {
 
   .contact_main_div_left_form form {
     width: 100%;
+    gap: 10px;
   }
 
   .contact_main_div_left_form_div {
@@ -1202,8 +1253,11 @@ header {
 
   .map_main_div_img {
     width: 100%;
+    height: 400px;
   }
-
+  .contact_main_div_img{
+    display: none;
+  }
   .map_main_div_text {
     width: 100%;
   }
@@ -1219,14 +1273,26 @@ header {
     font-size: 45px;
     line-height: 53px;
   }
+  .contact_main_div_left_form_btn{
+    padding: 20px ;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 514px) {
   .trade_divs_product {
-    min-width: 300px;
+    min-width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .trade_divs_product_right_body{
+    margin-top: 10px;
+    line-height: 18px;
   }
 
   .footer_main_links {
@@ -1246,11 +1312,12 @@ header {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 60px;
   }
 
   .contact_main_div_left_form_btn {
     width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1259,6 +1326,9 @@ header {
 
   .contact_main_div_left_form_div input {
     width: 100%;
+  }
+  .contact_main_div_left_form_div input::placeholder {
+    font-size: 14px;
   }
 
   .contact_main_div_left_form_div {
@@ -1278,9 +1348,7 @@ header {
 }
 
 @media screen and (max-width: 430px) {
-  ul{
-    list-style: none;
-  }
+
   .container{
     padding: 0 20px;
   }
@@ -1310,9 +1378,6 @@ header {
   }
 }
 @media screen and (max-width: 360px) {
-  ul{
-    list-style: none;
-  }
 
   .img_btn{
     padding: 10px;
@@ -1328,8 +1393,8 @@ header {
   }
 
   .hero-btn{
-    transform: scale(.9);
     margin-left: -15px;
+    width: 100%;
   }
 
   .done-card{
