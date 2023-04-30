@@ -11,7 +11,7 @@ body {
   font-family: 'Raleway', sans-serif;
   transition: all .3s;
   background: #e9e9e94b;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
