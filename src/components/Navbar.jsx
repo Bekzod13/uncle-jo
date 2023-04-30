@@ -6,9 +6,8 @@ import {Link} from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 // import images
-import {AiOutlineCaretDown} from 'react-icons/ai';
+import {AiOutlineCaretDown, AiOutlinePlus} from 'react-icons/ai';
 import {FaBars} from 'react-icons/fa';
-import {GrClose} from 'react-icons/gr';
 
 
 const Navbar = () => {
@@ -24,8 +23,8 @@ const Navbar = () => {
                     <img src={logo} alt="Uncle Jo" />
                 </Link>
                 <div className={bar ? "nav-main active" : "nav-main"}>
-                    <div className="bar-close"  onClick={()=>setBar(!bar)}>
-                        <GrClose/>
+                    <div className="bar-close message-close questions_plus questions_plus_big"  onClick={()=>setBar(!bar)}>
+                        <AiOutlinePlus />
                     </div>
                     <div className="nav-lang">
                         <div className="nav-current-lang">
@@ -47,8 +46,8 @@ const Navbar = () => {
                     </div>
                     <div className="nav-order-btn" onClick={()=>setModal(true)}>{data[lang].sendBtn}</div>
                 </div>
-                <div className="bar" onClick={()=>setBar(!bar)}>
-                    <FaBars/>
+                <div className="bar " onClick={()=>setBar(!bar)}>
+                    <FaBars />
                 </div>
             </header>
         </nav>
