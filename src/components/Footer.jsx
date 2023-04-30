@@ -1,8 +1,10 @@
-// Link
-import { Link } from 'react-router-dom';
+import Context from '../context/Context';
+import { useContext } from 'react';
+// import image
 import img from '../assets/logo.png'
 
 const Footer = () => {
+    const {lang, data} = useContext(Context);
     return (
         <div className='footer'>
             <div className="container">
@@ -11,15 +13,14 @@ const Footer = () => {
                         <img src={img} alt="" />
                     </div>
                     <div className="footer_main_links">
-                        <a href='#hero' to='/'>О Дяде Джо</a>
-                        <a href='#tarif' to='/'>Тарифы и услуги</a>
-                        <a href='#faq' to='/'>FAQ</a>
-                        <a href='#contact' to='/'>Контакты</a>
+                        <a href='#hero' to='/'>{data[lang].navLink1}</a>
+                        <a href='#tarif' to='/'>{data[lang].navLink2}</a>
+                        <a href='#faq' to='/'>{data[lang].navLink3}</a>
+                        <a href='#contact' to='/'>{data[lang].navLink4}</a>
                     </div>
                 </div>
                 <div className="footer_bottom">
-                    <p>Все права защищены Любое копирование и воспроизведение текста, в том числе частичное
-                        и в любых формах, без письменного разрешения правообладателя запрещено.</p>
+                    <p>{data[lang].footerText}</p>
                 </div>
             </div>
         </div>

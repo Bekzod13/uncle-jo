@@ -1,9 +1,12 @@
+import { useContext } from 'react';
+import Context from '../context/Context';
 // import images
 import img1 from '../assets/biznes1.png';
 import img2 from '../assets/biznes2.png';
 import img3 from '../assets/biznes3.png';
 
 const Done = () => {
+    const {lang, data} = useContext(Context);
     return (
         <>
             <div className='container done'>
@@ -11,38 +14,38 @@ const Done = () => {
                     <div className="done-cards">
                         <div className="done-card">
                             <div className="done-top">
-                                <div className="done-title">Топ-Селлер в Uzum</div>
+                                <div className="done-title">{data[lang].doneTopCardTitle1}</div>
                                 <img src={img1} alt="image 1" />
                             </div>
-                            <div className="done-body">За 3 месяца оборот более 500 миллионов сум и цифра растет вверх</div>
+                            <div className="done-body">{data[lang].doneTopCardBody1}</div>
                         </div>
                         <div className="done-card">
                             <div className="done-top">
-                                <div className="done-title">Экономия времени</div>
+                                <div className="done-title">{data[lang].doneTopCardTitle2}</div>
                                 <img src={img2} alt="image 2" />
                             </div>
-                            <div className="done-body">Полный спектр услуг по упаковке, маркировке и фотографированию товаров</div>
+                            <div className="done-body">{data[lang].doneTopCardBody2}</div>
                         </div>
                         <div className="done-card">
                             <div className="done-top">
-                                <div className="done-title">Дядя Джо учит</div>
+                                <div className="done-title">{data[lang].doneTopCardTitle3}</div>
                                 <img src={img3} alt="image 3" />
                             </div>
-                            <div className="done-body">Услуги по продвижению и консультированию владельцев магазинов в Uzum</div>
+                            <div className="done-body">{data[lang].doneTopCardBody3}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="done-bg">
                 <div className="container">
-                    <span>О дяде Джо</span>
-                    <p className='done_bg_title'>Всё готово  для вашего бизнеса</p>
+                    <span>{data[lang].doneSubtitle}</span>
+                    <p className='done_bg_title'>{data[lang].doneTitle}</p>
                     <div className='done-bg_div'>
-                        <p>Компания "Дядя Джо" - это фулфилмент-центр, который предоставляет полный спектр услуг по упаковке, маркировке и фотографированию товаров для продажи на маркетплейсе Uzum. Наша команда опытных специалистов гарантирует высокое качество обработки товаров и своевременную доставку на склад Uzum.</p>
+                        <p>{data[lang].doneText1}</p>
                         <br /><br />
-                        <p>Мы также предлагаем услуги по продвижению и консультированию владельцев магазинов на маркетплейсе Uzum, чтобы помочь им максимально эффективно реализовать свой товар. </p>
+                        <p>{data[lang].doneText2}</p>
                         <br /><br />
-                        <p>Благодаря нашему опыту и высокому уровню обслуживания мы стали топ-селлерами на Uzum с более чем тысячей заказов в день и оборотом более 500 миллионов сум за три месяца. Присоединяйтесь к нам и станьте частью успешной команды "Дядя Джо"!</p>
+                        <p>{data[lang].doneText3}</p>
                     </div>
                 </div>
             </div>

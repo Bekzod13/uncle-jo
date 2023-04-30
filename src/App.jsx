@@ -10,7 +10,7 @@ import Location from "./components/Location";
 
 
 function App() {
-  const [lang, setLang] = useState(0);
+  const [lang, setLang] = useState(1);
   const contextVlaue = {
     lang,
     setLang,

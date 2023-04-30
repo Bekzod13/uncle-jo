@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import Context from "../context/Context";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,6 +11,7 @@ import {FaAngleRight, FaAngleLeft} from 'react-icons/fa';
 import slide1 from '../assets/slide1.png';
 
 const Hero = () => {
+  const {lang, data} = useContext(Context);
     const settings = {
         customPaging: function(i) {
             return (
@@ -29,9 +32,9 @@ const Hero = () => {
   return (
     <div className='container hero' id="hero">
       <div className="hero-infos">
-        <h1>Центр подготовĸи  товаров и  продвижение  магазина от  Топ-Селлера Uzum</h1>
-        <p>Упаĸовĸа, штрих-ĸодирование, размещение товара  на сайт, ĸонсультирование и доставĸа на сĸлад Uzum</p>
-        <div className="hero-btn">Оставь заявку Дяде Джо</div>
+        <h1>{data[lang].heroTitle}</h1>
+        <p>{data[lang].heroText}</p>
+        <div className="hero-btn">{data[lang].sendBtn}</div>
       </div>
       <div className="hero-slider">
         <Slider {...settings}>

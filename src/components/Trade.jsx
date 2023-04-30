@@ -1,11 +1,13 @@
-import React from 'react'
+import { useContext } from "react"
+import Context from "../context/Context"
 
 const Trade = () => {
+    const {lang, data} = useContext(Context);
     return (
         <div className='trade'>
             <div className="container">
                 <div className="trade_main">
-                    <p className="title">Процесс начала торговли в Uzum</p>
+                    <p className="title">{data[lang].tradeTitle}</p>
                 </div>
             </div>
             <div className="trade_divs">
@@ -16,8 +18,8 @@ const Trade = () => {
                                 <p className='trade_divs_product_num'>1</p>
                             </div>
                             <div className="trade_divs_product_right">
-                                <p className='trade_divs_product_right_title'>Оставляй заявĸу или звони напрямую Дяде Джо</p>
-                                <p className='trade_divs_product_right_body'>Дядя Джо свяжется с вами в течении 24 часов, чтобы обсудить, как помочь вашему бизнесу.</p>
+                                <p className='trade_divs_product_right_title'>{data[lang].tradeTitle1}</p>
+                                <p className='trade_divs_product_right_body'>{data[lang].tradeBody1}</p>
                             </div>
                         </div>
                         <div className="trade_divs_product">
@@ -25,8 +27,8 @@ const Trade = () => {
                                 <p className='trade_divs_product_num'>2</p>
                             </div>
                             <div className="trade_divs_product_right">
-                                <p className='trade_divs_product_right_title'>Консультируем, подбираем индивидуальный подход</p>
-                                <p className='trade_divs_product_right_body'>Мы предоставляем уникальные стратегии и особые решения, чтобы обеспечить оптимальное управление бизнеса.</p>
+                                <p className='trade_divs_product_right_title'>{data[lang].tradeTitle2}</p>
+                                <p className='trade_divs_product_right_body'>{data[lang].tradeBody2}</p>
                             </div>
                         </div>
                     </div>
@@ -36,8 +38,8 @@ const Trade = () => {
                                 <p className='trade_divs_product_num'>3</p>
                             </div>
                             <div className="trade_divs_product_right">
-                                <p className='trade_divs_product_right_title'>Соглашение о сотрудничестве</p>
-                                <p className='trade_divs_product_right_body'>Произведем официальное оформление нашего сотрудничества письменным договором с печатью.</p>
+                                <p className='trade_divs_product_right_title'>{data[lang].tradeTitle3}</p>
+                                <p className='trade_divs_product_right_body'>{data[lang].tradeBody3}</p>
                             </div>
                         </div>
                         <div className="trade_divs_product">
@@ -45,7 +47,7 @@ const Trade = () => {
                                 <p className='trade_divs_product_num'>4</p>
                             </div>
                             <div className="trade_divs_product_right">
-                                <p className='trade_divs_product_right_title'>Вы в Uzum-e!</p>
+                                <p className='trade_divs_product_right_title'>{data[lang].tradeTitle4}</p>
                             </div>
                         </div>
                     </div>

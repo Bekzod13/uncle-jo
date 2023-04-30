@@ -379,6 +379,11 @@ header {
   text-align: center;
   color: var(--blue);
 }
+.infinity{
+  display: inline-flex;
+  height: 100%;
+  transform: translateY(20%);
+}
 
 .tarif_product {
   width: 100%;
@@ -664,7 +669,7 @@ header {
 }
 
 .questions_box_body {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.2px;
   width: calc(100% - 30px);
@@ -768,6 +773,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .contact_main_div_left_form_btn {
@@ -854,6 +860,9 @@ header {
   line-height: 35px;
   color: var(--blue);
   margin-top: 10px;
+}
+.map_main_div_text_body.one {
+  margin-bottom: 30px;
 }
 
 .footer {
