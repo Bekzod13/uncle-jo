@@ -1504,6 +1504,10 @@ header {
   .title{
     font-size: 40px;
   }
+  .done-bg_div p{
+    line-height: 15px;
+    font-weight: 300;
+  }
   
 }
 @media screen and (max-width: 360px) {
@@ -1529,5 +1533,6 @@ header {
   .done-card{
     min-width: 100px;
   }
+
   
 }
