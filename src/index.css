@@ -36,6 +36,125 @@ a{
 html {
   scroll-behavior: smooth;
 }
+/* contact modal */
+.modal-contact{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contact.none{
+  display: none;
+}
+.modal-contact-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  background: rgba(0,0,0, .5);
+}
+.contact_main_div_left_form_box.modal{
+  position: relative;
+  z-index: 101;
+  background: var(--gray);
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+.modal h2{
+  color: var(--blue);
+  text-align: center;
+}
+.message-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.message-modal.none{
+  display: none;
+}
+.message-modal-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0, .5);
+}
+.message-modal-main{
+  max-width: 500px;
+  width: 95%;
+  background: var(--white);
+  border-radius: 30px;
+  position: relative;
+  z-index: 101;
+  padding: 60px 40px;
+  overflow: hidden;
+}
+.message-modal-main::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: var(--blue-bg);
+  left: 0;
+  top: 0;
+  animation: lineBlue 5s;
+}
+@keyframes lineBlue{
+  0%{
+    width: 100%;
+  }
+  100%{
+    width: 0;
+  }
+}
+.message-modal-main p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.message-close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+/* not found */
+.not-found{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  color: var(--gray);
+}
+.not-found a{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--blue-bg);
+  margin-top: 20px;
+  color: var(--white);
+}
 /* navbar */
 nav {
   height: 100px;
@@ -1005,6 +1124,12 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .contact_main_div_left_form_box.modal{
+    gap: 10px;
+  }
+  .modal h2{
+    margin-bottom: 10px;
+  }
   .done-cards-box {
     overflow-x: scroll;
   }

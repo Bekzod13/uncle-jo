@@ -14,7 +14,7 @@ import {GrClose} from 'react-icons/gr';
 const Navbar = () => {
 
     const [bar, setBar] = useState(true);
-    const {lang, setLang, data} = useContext(Context);
+    const {lang, setLang, data, setModal} = useContext(Context);
 
   return (
     <>
@@ -45,7 +45,7 @@ const Navbar = () => {
                         <a href='#faq' className="nav-link">{data[lang].navLink3}</a>
                         <a href='#contact' className="nav-link">{data[lang].navLink4}</a>
                     </div>
-                    <div className="nav-order-btn">{data[lang].sendBtn}</div>
+                    <div className="nav-order-btn" onClick={()=>setModal(true)}>{data[lang].sendBtn}</div>
                 </div>
                 <div className="bar" onClick={()=>setBar(!bar)}>
                     <FaBars/>

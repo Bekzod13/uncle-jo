@@ -11,7 +11,7 @@ import {FaAngleRight, FaAngleLeft} from 'react-icons/fa';
 import slide1 from '../assets/slide1.png';
 
 const Hero = () => {
-  const {lang, data} = useContext(Context);
+  const {lang, data, setModal} = useContext(Context);
     const settings = {
         customPaging: function(i) {
             return (
@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="hero-infos">
         <h1>{data[lang].heroTitle}</h1>
         <p>{data[lang].heroText}</p>
-        <div className="hero-btn">{data[lang].sendBtn}</div>
+        <div className="hero-btn" onClick={()=>setModal(true)}>{data[lang].sendBtn}</div>
       </div>
       <div className="hero-slider">
         <Slider {...settings}>

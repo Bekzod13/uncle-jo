@@ -5,10 +5,11 @@ import { useContext, useRef } from 'react';
 import img from '../assets/contact_img/img.png';
 // icons
 import { BsFacebook, BsInstagram, BsTelegram } from 'react-icons/bs';
+import {AiOutlinePlus} from 'react-icons/ai';
 
 const Contact = () => {
 
-    const {lang, data} = useContext(Context);
+    const {lang, data, modal, setModal, modalMessage, setModalMessage} = useContext(Context);
 
     const nameRef = useRef();
     const companyRef = useRef();
@@ -51,19 +52,25 @@ const Contact = () => {
             <b>☎️Номер телефона: </b> ${phoneRef.current.value}\n
             <b>📧Email: </b> ${emailRef.current.value}\n
             `;
-            // sendMessage(message);
+            sendMessage(message);
             nameRef.current.value = '',
             companyRef.current.value = '',
             phoneRef.current.value = '',
             emailRef.current.value = '',
-            console.log(message);
-            alert("Спасибо,ваша заявка принята! Мы свяжемся с вами в ближайшее время");
+            setModalMessage(true);
+                setTimeout(() => {
+                    setModal(false);
+                    setModalMessage(false);
+                }, 5000);
         }else{
-            alert("Форма не заполнена");
+            alert(data[lang].error);
         }
+
+  
     }
        
     return (
+        <>
         <div className='contact' id='contact'>
             <div className="container">
                 <div className="contact_main">
@@ -106,6 +113,31 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        <div className={ modal ? "modal-contact" : "modal-contact none"}>
+            <div className="modal-contact-bg" onClick={()=>setModal(false)}></div>
+            <form onSubmit={formSender} action="" className='contact_main_div_left_form_box modal'>
+                <h2>{data[lang].sendBtn}</h2>
+                <div className='contact_main_div_left_form_div'>
+                    <input ref={nameRef} type="text" placeholder={data[lang].placeholderFish} />
+                    <input ref={companyRef} type="text" placeholder={data[lang].placeholderCompany} />
+                </div>
+                <div className='contact_main_div_left_form_div'>
+                    <input ref={phoneRef} type="text" placeholder='+998' />
+                    <input ref={emailRef} type="text" placeholder='Email' />
+                </div>
+                <button className='contact_main_div_left_form_btn'>{data[lang].sendBtnShort}</button>
+            </form>
+        </div>
+        <div className={ modalMessage ? "message-modal" : "message-modal none" }>
+            <div className="message-modal-bg" onClick={()=>setModalMessage(false)}></div>
+            <div className="message-modal-main ok">
+                <div className="message-close questions_plus questions_plus_big" onClick={()=>setModalMessage(false)}><AiOutlinePlus /></div>
+                <p>
+                   {data[lang].thanks}
+                </p>
+            </div>
+        </div>
+        </>
     )
 }
 

@@ -11,16 +11,21 @@ import Location from "./components/Location";
 
 function App() {
   const [lang, setLang] = useState(1);
-  const contextVlaue = {
+  const [modal, setModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState(false);
+  const contextValue = {
     lang,
     setLang,
-    data
+    data,
+    modal, 
+    setModal,
+    modalMessage, 
+    setModalMessage
   };
   return (
-    <Context.Provider value={contextVlaue}>
+    <Context.Provider value={contextValue}>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/loc" element={<Location/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
     </Context.Provider>
