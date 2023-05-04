@@ -272,6 +272,9 @@ header {
 .bar-close {
   display: none;
 }
+.bar-close.questions_plus{
+  display: none;
+}
 
 .nav-more-langs {
   width: 100%;
@@ -1172,6 +1175,9 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+  }
+  .bar-close.questions_plus{
+    display: flex;
   }
 
   .nav-lang {
