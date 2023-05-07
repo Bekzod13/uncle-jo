@@ -3,7 +3,7 @@ import Context from '../context/Context';
 import {Link} from 'react-router-dom';
 
 // import images
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 // import images
 import {AiOutlineCaretDown, AiOutlinePlus} from 'react-icons/ai';

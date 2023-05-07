@@ -1134,6 +1134,23 @@ header {
   }
   .done-cards-box {
     overflow-x: scroll;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 10px;
+  }
+  .done-cards-box::-webkit-scrollbar {
+    height: 10px;
+    margin-top: 10px;
+  }
+  .done-cards-box::-webkit-scrollbar-track {
+    background: var(--gray);
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+  }
+  .done-cards-box::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
   }
   .nav-link{
     color: var(--blue);
@@ -1271,6 +1288,8 @@ header {
     font-size: 15px;
     width: 100%;
   }
+  
+
   .done-cards{
     padding: 0 10px;
   }

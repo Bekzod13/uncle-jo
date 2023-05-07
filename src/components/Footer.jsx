@@ -1,7 +1,7 @@
 import Context from '../context/Context';
 import { useContext } from 'react';
 // import image
-import img from '../assets/logo.png'
+import img from '../assets/logo.svg'
 
 const Footer = () => {
     const {lang, data} = useContext(Context);
