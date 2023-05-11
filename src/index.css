@@ -1127,7 +1127,6 @@ header {
 
 @media screen and (max-width: 768px) {
   body {
-    scrollbar-color: #888888 #f1f1f1; /* set scrollbar colors */
     scrollbar-width: thin; /* show standard scrollbar */
     -ms-overflow-style: -ms-autohiding-scrollbar; /* show Internet Explorer scrollbar */
   }
