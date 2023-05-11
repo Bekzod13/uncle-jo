@@ -9,6 +9,8 @@ import {FaAngleRight, FaAngleLeft} from 'react-icons/fa';
 
 // import images
 import slide1 from '../assets/slide1.png';
+import slide2 from '../assets/slide2.png';
+import slide3 from '../assets/slide3.png';
 
 const Hero = () => {
   const {lang, data, setModal} = useContext(Context);
@@ -42,7 +44,10 @@ const Hero = () => {
                 <img src={slide1} alt="" />
             </div>
             <div className="hero-slide" >
-                <img src={slide1} alt="" />
+                <img src={slide2} alt="" />
+            </div>
+            <div className="hero-slide" >
+                <img src={slide3} alt="" />
             </div>
         </Slider>
       </div>
