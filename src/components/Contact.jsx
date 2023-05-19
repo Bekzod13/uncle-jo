@@ -93,8 +93,8 @@ const Contact = () => {
                             <div className="contact_main_div_left_bottom">
                                 <div className="contact_main_div_left_bottom_left">
                                     <p>{data[lang].phone}</p>
-                                    <a href='tel:+998-90-806-50-67'>+998 90 806 50 67</a>
-                                    <a href='tel:+998-90-806-50-67'>+998 99 520 88 55</a>
+                                    <a href='tel:+998-90-806-50-67'>+998 97 758 91 52</a>
+                                    <a href='tel:+998-99-520-88-55'>+998 99 520 88 55</a>
                                 </div>
                                 <div className="contact_main_div_left_bottom_right">
                                     <p>{data[lang].social}</p>
