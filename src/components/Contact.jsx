@@ -39,18 +39,16 @@ const Contact = () => {
         e.preventDefault();
         if(
             nameRef.current.value !== '' &&
-            companyRef.current.value !== '' &&
-            phoneRef.current.value !== '' &&
-            emailRef.current.value !== ''
+            // companyRef.current.value !== '' &&
+            phoneRef.current.value !== ''
+            // emailRef.current.value !== ''
         ){
 
             let message = 
             `
             <b>✅Заявка от сайта</b>\n
             <b>👤Отправитель: </b> ${nameRef.current.value}\n
-            <b>🏢Название компании: </b> ${companyRef.current.value}\n
             <b>☎️Номер телефона: </b> ${phoneRef.current.value}\n
-            <b>📧Email: </b> ${emailRef.current.value}\n
             `;
             sendMessage(message);
             nameRef.current.value = '',
@@ -79,14 +77,15 @@ const Contact = () => {
                         <div className="contact_main_div_left">
                             <div className="contact_main_div_left_form">
                                 <form onSubmit={formSender} action="" className='contact_main_div_left_form_box'>
+                                    <h2 style={{textAlign: "center"}}>{data[lang].sendBtn}</h2>
                                     <div className='contact_main_div_left_form_div'>
                                         <input ref={nameRef} type="text" placeholder={data[lang].placeholderFish} />
-                                        <input ref={companyRef} type="text" placeholder={data[lang].placeholderCompany} />
-                                    </div>
-                                    <div className='contact_main_div_left_form_div'>
                                         <input ref={phoneRef} type="text" placeholder='+998' />
-                                        <input ref={emailRef} type="text" placeholder='Email' />
                                     </div>
+                                    {/* <div className='contact_main_div_left_form_div'> */}
+                                        {/* <input ref={companyRef} type="text" placeholder={data[lang].placeholderCompany} /> */}
+                                        {/* <input ref={emailRef} type="text" placeholder='Email' /> */}
+                                    {/* </div> */}
                                     <button className='contact_main_div_left_form_btn'>{data[lang].sendBtnShort}</button>
                                 </form>
                             </div>
@@ -119,12 +118,12 @@ const Contact = () => {
                 <h2>{data[lang].sendBtn}</h2>
                 <div className='contact_main_div_left_form_div'>
                     <input ref={nameRef} type="text" placeholder={data[lang].placeholderFish} />
-                    <input ref={companyRef} type="text" placeholder={data[lang].placeholderCompany} />
-                </div>
-                <div className='contact_main_div_left_form_div'>
                     <input ref={phoneRef} type="text" placeholder='+998' />
-                    <input ref={emailRef} type="text" placeholder='Email' />
                 </div>
+                {/* <div className='contact_main_div_left_form_div'> */}
+                    {/* <input ref={companyRef} type="text" placeholder={data[lang].placeholderCompany} /> */}
+                    {/* <input ref={emailRef} type="text" placeholder='Email' /> */}
+                {/* </div> */}
                 <button className='contact_main_div_left_form_btn'>{data[lang].sendBtnShort}</button>
             </form>
         </div>

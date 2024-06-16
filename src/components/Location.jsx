@@ -5,7 +5,7 @@ import location from '../assets/location.svg';
 const Location = () => {
 
     const mapState = {
-        center: [41.324940, 69.249526],
+        center: [41.260118, 69.240145],
         zoom: 15,
       };
 
@@ -19,7 +19,7 @@ const Location = () => {
                 modules={["layout.ImageWithContent"]}
                 >
                 <Placemark 
-                    geometry={[41.324940, 69.249526]}  
+                    geometry={mapState.center}  
                     options={{
                         iconLayout: "default#imageWithContent",
                         iconImageHref: location,
