@@ -120,6 +120,7 @@ const Contact = () => {
                                             viewBox={`0 0 256 256`}
                                             />
                                     </div>
+                                    <a style={{marginTop: '10px', display: "flex" }} href="https://t.me/uncle_jo_manager">@uncle_jo_manager</a>
                                 </div>
                             </div>
                         </div>
