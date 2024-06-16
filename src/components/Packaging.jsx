@@ -26,7 +26,7 @@ const Packaging = () => {
                         <div className="packaging_main_product">
                             <p className='packaging_main_product_title packaging_main_product_title2'>{data[lang].packagingProductTitle31} <br />{data[lang].packagingProductTitle32}</p>
                             <img src={img2} alt="" />
-                            <button className='img_btn img_btn_scale'>{data[lang].packagingProductBtn1}</button>
+                            <button className='img_btn img_btn_scale'>{data[lang].packagingProductBtn3}</button>
                         </div>
                     </div>
                 </div>

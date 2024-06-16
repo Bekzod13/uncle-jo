@@ -6,6 +6,7 @@ import img from '../assets/contact_img/img.png';
 // icons
 import { BsFacebook, BsInstagram, BsTelegram } from 'react-icons/bs';
 import {AiOutlinePlus} from 'react-icons/ai';
+import QRCode from 'react-qr-code';
 
 const Contact = () => {
 
@@ -89,11 +90,11 @@ const Contact = () => {
                                     <button className='contact_main_div_left_form_btn'>{data[lang].sendBtnShort}</button>
                                 </form>
                             </div>
-                            <div className="contact_main_div_left_bottom">
+                            <div className="contact_main_div_left_bottom" style={{gap: "30px"}}>
                                 <div className="contact_main_div_left_bottom_left">
                                     <p>{data[lang].phone}</p>
-                                    <a href='tel:+998-90-806-50-67'>+998 90 806 50 67</a>
-                                    <a href='tel:+998-90-806-50-67'>+998 99 520 88 55</a>
+                                    <a href='tel:+998977589152'>+998 97 758 91 52</a>
+                                    {/* <a href='tel:+998-90-806-50-67'>+998 99 520 88 55</a> */}
                                 </div>
                                 <div className="contact_main_div_left_bottom_right">
                                     <p>{data[lang].social}</p>
@@ -101,6 +102,23 @@ const Contact = () => {
                                         <a href='https://www.facebook.com/profile.php?id=100091669283557'><BsFacebook /></a>
                                         <a href='https://www.instagram.com/uncle_jo_fulfillment/'><BsInstagram /></a>
                                         <a href='https://t.me/uncle_jo_fulfillment'><BsTelegram /></a>
+                                    </div>
+                                </div>
+                                <div className='contact_main_div_left_bottom_right'>
+                                    <p>QR code:</p>
+                                    <div className="contact_main_div_left_bottom_right_div">
+                                        <QRCode
+                                            size={128}
+                                            style={{ 
+                                                height: "auto", 
+                                                maxWidth: "100%", 
+                                                width: "100%",
+                                            }}
+                                            fgColor='#260057'
+                                            title='uncle jo'
+                                            value={"https://t.me/uncle_jo_manager"}
+                                            viewBox={`0 0 256 256`}
+                                            />
                                     </div>
                                 </div>
                             </div>
